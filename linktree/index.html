@@ -1,15 +1,88 @@
+<!-- Para comentar o codigo basta segurar o ctrl + : -->
+<!-- Letras com serifa para texto para chamar atenção e com pouco texto -->
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leia Mais Comigo</title>
+    <meta charset="UTF-8"> <!-- Aqui define o padrão da linguagem em português -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  Aqui define o tamanho da pagina padrão -->
+    <title>Leia Mais Comigo</title>  <!-- Aqui é definido o titulo do site -->
+    <style>
+        body {
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14pt;
+        }
+
+        main {
+            background-color: white;
+            background-image: url(./image/background-top.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #logo {
+            text-align: center;
+        }
+        #logo img{
+            margin-top: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #h1{
+            color: white;
+            background-color:black;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            /* padding: 20px 0;  É a mesma coisa que os 2 padding de cima, de uma forma mais simplificado*/
+        }
+
+        .link-social a{
+            padding: 20px;
+            margin: 10px 0;
+            background-color: black;
+            color: white;
+            text-align: center;   /*Esse comando aqui é para centralizar */
+            text-decoration: none;  /* Esse aqui é um atalho para retirar a linha embaixo da escrita */
+            border-radius: 15px;         
+            display: flex;  
+            justify-content: center; 
+            align-items: center;
+        }
+
+    </style>
 </head>
 <body>
-    <div>
-        <img src="./image/logo.png" alt="logamarca do leia mais coimigo">
-        <h1>Projeto Leia Mais Comigo</h1>
-    </div>
+    <main>
+        <div id="logo">
+            <img src="./image/logo.png" alt="logamarca do leia mais comigo" width="200" heigth="200">   <!-- Aqui no img src está sendo inserido o path do arquivo da imagen o alt é o nome da logo caso ela não apareça -->
+        </div>
+        <h1 id="h1">Projeto Leia Mais Comigo</h1>  <!-- o h1 é um padrão do google ter -->
+
+        <div class="link-social">
+            <a href="https://google.com.br" target="_blank">
+                <img src="./image/icons8-youtube-48.png" alt="link para o youtube" height="40">  <!-- Aqui está sendo adicionano uma imagem, para pesquisar uma logo marcar, ir no icons8 -->
+                Youtube
+            </a>  <!-- Aqui foi criado o link do site no href e após a tag está escrito o nome do link do site, o target permite abrir outra aba no navegador -->
+        </div>
+
+        <div class="link-social">
+            <a href="https://google.com.br" target="_blank">
+                <img src="./image/icons8-instagram-48.png" alt="link para o instagram" height="40">  <!-- Aqui está sendo adicionano uma imagem, para pesquisar uma logo marcar, ir no icons8 -->
+                Instagran
+            </a>  <!-- Aqui foi criado o link do site no href e após a tag está escrito o nome do link do site, o target permite abrir outra aba no navegador -->
+        </div>
+
+        <div class="link-social">
+            <a href="https://google.com.br" target="_blank">
+                <img src="./image/icons8-whatsapp-48.png" alt="link para o whatsapp" height="40">  <!-- Aqui está sendo adicionano uma imagem, para pesquisar uma logo marcar, ir no icons8 -->
+                Whatsapp
+            </a>  <!-- Aqui foi criado o link do site no href e após a tag está escrito o nome do link do site, o target permite abrir outra aba no navegador -->
+        </div>
+    </main>
     
 </body>
 </html>
