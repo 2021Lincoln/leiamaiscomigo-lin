@@ -1,7 +1,8 @@
 <!-- Para comentar o codigo basta segurar o ctrl + : -->
 <!-- Letras com serifa para texto para chamar atenção e com pouco texto -->
-
-
+<!-- inline é a forma de colocar o css dentro da tag, que não é uma boa prática fazer. -->
+<!--  exemplo de como criar uma class no html  .link-social a-->
+<!-- A tag display flex: tem um comportamento de mostrar o elemento na horizontal e centralizado, o display none serve para tirar algum elemento da tela -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -11,7 +12,7 @@
     <title>Leia Mais Comigo</title>  <!-- Aqui é definido o titulo do site -->
     <style>
         body {
-            background-color: black;
+            background-color: white;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 14pt;
         }
@@ -21,6 +22,7 @@
             background-image: url(./image/background-top.jpg);
             background-position: center;
             background-size: cover;
+            height: 100vh;
         }
         #logo {
             text-align: center;
@@ -32,25 +34,31 @@
             border-radius: 50%;
         }
         #h1{
-            color: white;
-            background-color:black;
+            color: black;
+            background-color:white;
             text-align: center;
             padding-top: 20px;
             padding-bottom: 20px;
             /* padding: 20px 0;  É a mesma coisa que os 2 padding de cima, de uma forma mais simplificado*/
         }
 
+        .link-social{
+            padding: 10px 0;
+        }
         .link-social a{
             padding: 20px;
-            margin: 10px 0;
-            background-color: black;
-            color: white;
-            text-align: center;   /*Esse comando aqui é para centralizar */
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            /* text-align: center;   Esse comando aqui é para centralizar */
             text-decoration: none;  /* Esse aqui é um atalho para retirar a linha embaixo da escrita */
-            border-radius: 15px;         
-            display: flex;  
-            justify-content: center; 
+            border-radius: 15px;       /* Esse comando serve para deixar redondo */
+            display: flex;  /* A tag display é a forma de como ver os elementos na tela */
+            justify-content: center;    
             align-items: center;
+            width: 80%;
+            min-width: 300px;
+            max-width: 400px;
         }
 
     </style>
@@ -60,10 +68,10 @@
         <div id="logo">
             <img src="./image/logo.png" alt="logamarca do leia mais comigo" width="200" heigth="200">   <!-- Aqui no img src está sendo inserido o path do arquivo da imagen o alt é o nome da logo caso ela não apareça -->
         </div>
-        <h1 id="h1">Projeto Leia Mais Comigo</h1>  <!-- o h1 é um padrão do google ter -->
+        <h1 id="h1">Projeto Leia Mais Comigo</h1>  <!-- A tag h é titulo e é um padrão do google ter -->
 
         <div class="link-social">
-            <a href="https://google.com.br" target="_blank">
+            <a href="https://google.com.br" target="_blank">  <!-- A tag a é para links -->
                 <img src="./image/icons8-youtube-48.png" alt="link para o youtube" height="40">  <!-- Aqui está sendo adicionano uma imagem, para pesquisar uma logo marcar, ir no icons8 -->
                 Youtube
             </a>  <!-- Aqui foi criado o link do site no href e após a tag está escrito o nome do link do site, o target permite abrir outra aba no navegador -->
