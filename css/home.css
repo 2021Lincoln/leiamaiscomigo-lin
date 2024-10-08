@@ -1,7 +1,39 @@
 header{
     background-image: url(../image/background-top.jpg);
+    background-size: cover;
+    background-position: center top;
 }
 
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--shawdow);
+    min-height: 400px;
+}
+
+.header-text, 
+.header-logo{
+    width: 50%;
+    color: var(--white);
+    padding: 40px;
+}
+
+.header-logo{
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo img{  /* Essa classe é para alterar a logo da imagem do lado direito */
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+/* Navbar */
 nav ul{
     display: flex;
     justify-content: center;
@@ -9,4 +41,21 @@ nav ul{
 
 nav li{
     list-style: none;
+}
+
+.nav-top{
+    line-height: 40px;
+    background-color: var(--black);
+}
+
+.nav-top li a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 20px;
+}
+
+.nav-top li a:hover{   /* Essa tag hover serve para quando passar o mouse em cima do link ele mostra outra cor como se fosse uma caixa de cor para diferenciar */
+    color: var(--gray);
+    background-color: var(--white);
+    border-bottom: solid 4px var(--gray);
 }
