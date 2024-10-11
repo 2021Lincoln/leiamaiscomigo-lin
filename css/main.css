@@ -25,3 +25,10 @@ a{
     color: var(--gray);
     text-decoration: underline;
 }
+
+.container{
+    width: 100%;
+    min-width: 340px;
+    max-width: 1280px;
+    margin: auto; /* serve para centralizar, toda div que eu quero centralizar eu uso o margin auto*/
+}
