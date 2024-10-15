@@ -28,10 +28,11 @@
             <!-- server para armazenar links, é uma barra de navegação  -->
             <ul>
                 <!-- lista desordenada, Cria a lista desordenada -->
-                <li> <a href="#">Inicio</a></li> <!-- item da lista, Cria a lista com bolinhas ao lado -->
-                <li> <a href="#">Galeria</a></li>
-                <li> <a href="#">Agenda</a></li>
-                <li> <a href="#">Contato</a></li>
+                <li> <a href="index.html">Inicio</a></li> <!-- item da lista, Cria a lista com bolinhas ao lado -->
+                <li> <a href="index.html#cards">Galeria</a></li>
+                <li> <a href="index.html#agenda">Agenda</a></li>
+                <li> <a href="index.html#contato">Contato</a></li>
+                <li> <a href="login.html">Entrar</a></li>
             </ul>
         </nav>
 
@@ -50,7 +51,7 @@
         </div>
     </header>
 
-    <section class="card-content">
+    <section class="card-content" id="cards">
         <div class="container">
 
             <div class="card">
@@ -137,7 +138,7 @@
         </div>
     </section>
 
-    <section class="container contact">  <!-- A section também pode ser usada como uma div, a class container server para conter   -->
+    <section class="container contact" id="contato">  <!-- A section também pode ser usada como uma div, a class container server para conter   -->
         <div class="contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.3565145343414!2d-43.56141262383389!3d-22.900217479259815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be15839e68c4f%3A0x588a284ae162bc38!2sSenac%20Campo%20Grande!5e0!3m2!1spt-BR!2sbr!4v1728687330350!5m2!1spt-BR!2sbr" width="98%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   <!-- Aqui foi adicionado o iframe do googlemaps -->
             <div>
@@ -150,11 +151,11 @@
 
             <div class="form-group">
                 <!-- <label for="nome">Nome:</label> -->
-                <input type="text" id="nome" name="nome" placeholder="Nome"> <!-- O placeholder é um texto de sugestão  -->
+                <input type="text" id="nome" name="nome" placeholder="Nome" required> <!-- O placeholder é um texto de sugestão, o required quer dizer que é obrigatorio  -->
             </div>
             <div class="form-group">
                 <!-- <label for="Email ou Telefone">Email ou Telefone:</label> -->
-                <input type="email" id="email" name="email" placeholder="E-mail"> <!-- O placeholder é um texto de sugestão  -->
+                <input type="email" id="email" name="email" placeholder="E-mail" disabled> <!-- O placeholder é um texto de sugestão, disabled desabilita o campo -->
             </div>
             <div class="form-group">
                 <!-- <label for="Email ou Telefone">Email ou Telefone:</label> -->
@@ -176,7 +177,7 @@
                 <!-- <label for="mensagem">mensagem</label> -->
                 <textarea name="mensagem" id="mensagem" rows="5" placeholder="mensagem"></textarea>
             </div>
-            <div class="">
+            <div class="form-group form-group-button">
                 <!-- <input type="submit" value="Enviar"> -->
                 <button>Enviar</button>
                 <button type="reset">Limpar</button> 

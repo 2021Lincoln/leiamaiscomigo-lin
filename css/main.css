@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@400;500;700;900&display=swap');
+@import "./nav.css";
+
+
+
 :root{ /* Aqui dentro desse root é onde é criado as variaveis para  */
     --blue: #4242dd;
     --white: #eeeeee;
@@ -5,7 +10,8 @@
     --gray: #444444;
     --font-title: 'serif';
     --shawdow: rgba(0,0,0,0.25);
-    --font-primary: 'roboto';
+    --font-title: "Nunito", sans-serif;
+    --font-size-default: "Roboto", sans-serif;
     --font-size-default: 16px;
 
 }
