@@ -11,7 +11,7 @@
 .form-group textarea{
     width: 100%;
     margin-bottom: 10px;
-    padding: 5px, 10px;
+    padding: 5px 10px;
     border-radius: 8px;
     font-family: var(--font-primary);
     border: solid 1px var(--blue)
