@@ -1,3 +1,5 @@
+@import "./form.css";
+
 header{
     background-image: url(../image/background-top.jpg);
     background-size: cover;
@@ -34,33 +36,6 @@ header{
     padding: 20px;
     background-color: var(--white);
     border-radius: 50%;
-}
-
-/* Navbar */
-nav ul{
-    display: flex;
-    justify-content: center;
-}
-
-nav li{
-    list-style: none;
-}
-
-.nav-top{
-    line-height: 40px;
-    background-color: var(--black);
-}
-
-.nav-top li a{
-    text-decoration: none;
-    color: var(--white);
-    padding: 10px 20px;
-}
-
-.nav-top li a:hover{   /* Essa tag hover serve para quando passar o mouse em cima do link ele mostra outra cor como se fosse uma caixa de cor para diferenciar */
-    color: var(--gray);
-    background-color: var(--white);
-    border-bottom: solid 4px var(--gray);
 }
 
 /* cards */
@@ -121,8 +96,4 @@ nav li{
     margin-bottom: 10px;
 }
 
-/* Form */
 
-.form-group{
-    display: flex;
-}
