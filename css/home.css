@@ -97,3 +97,21 @@ header{
 }
 
 
+@media (max-width: 760px){
+    .contact{
+        flex-direction: column;
+    }
+    .contact-map,
+    .contact-form{
+        width: 100%;
+    }
+}
+
+@media (max-width:400px){  /* O @midia é aplicado sempre no final do arquivo */
+    .header-content{
+        flex-direction: column-reverse;
+    }
+    .contact{
+        flex-direction: column;
+    }
+}

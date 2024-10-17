@@ -1,1 +1,23 @@
-@import "./form.css"
+@import "./form.css";
+
+
+.form-access{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /* 100vh é a visao do usuario, com isso fica centralizado a caixa do form-access */
+position: relative;
+top: 0;
+background-color: var(--shadow);
+}
+
+.form-access form{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    width: 300px;
+    border: solid 1px var(--gray);
+    padding: 20px;
+    background-color: var(--white);
+}
